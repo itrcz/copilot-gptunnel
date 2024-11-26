@@ -29,7 +29,7 @@ export const requestGPTunnel = async (otp: Options) => {
     },
     data: {
       model,
-      useWalletBalance,
+      useWalletBalance: useWalletBalance ? true : undefined,
       messages: [
         {
           role: "system",
